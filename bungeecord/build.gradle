@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    maven {
+        name 'bungeecord-repo'
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compileOnly 'net.md-5:bungeecord-api:1.14-SNAPSHOT'
+}
+
+jar {
+    archiveBaseName = rootProject.name + '-bungeecord'
+}

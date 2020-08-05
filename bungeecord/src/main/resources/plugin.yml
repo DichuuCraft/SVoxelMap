@@ -1,0 +1,4 @@
+name: SVoxelmap
+main: com.hadroncfy.svoxelmap.bungee.SVoxelMap
+version: 0.1
+author: hadroncfy

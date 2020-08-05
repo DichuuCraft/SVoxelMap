@@ -14,5 +14,6 @@ include 'shared'
 include 'api'
 include 'services:webservice'
 */
-
+include 'velocity'
+include 'bungeecord'
 rootProject.name = 'svoxelmap'
