@@ -1,7 +1,6 @@
 package com.hadroncfy.svoxelmap;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
@@ -34,7 +33,7 @@ public class SVoxelMap {
 
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event){
-        server.getChannelRegistrar().register(VOXELMAP_CHANNEL);
+        this.server.getChannelRegistrar().register(VOXELMAP_CHANNEL);
     }
     @Subscribe
     public void onPluginMessage(PluginMessageEvent event){
@@ -56,5 +55,4 @@ public class SVoxelMap {
             }
         }
     }
-    
 }
